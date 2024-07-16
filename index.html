@@ -1,145 +1,327 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Antonio Junior</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Estilos personalizados -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte Roboto -->
-</head>
-<body class="dark-bg">
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Antonio Junior</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfólio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Seção Inicial com Background -->
-    <section id="home" class="py-5 text-white text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h1 class="display-4 mb-4">Antonio Junior</h1>
-                    <p class="lead">Atuo na criação e manutenção de sites e sistemas web, utilizando a plataforma Wordpress e as linguagens PHP, HTML, CSS e JavaScript. Sou responsável por garantir a qualidade, a segurança e a performance dos projetos, seguindo as melhores práticas e padrões de desenvolvimento. Além disso, eu apoio a equipe de suporte técnico na resolução de problemas e demandas dos clientes internos e externos.</p>
-                </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Innova Portfolio HTML Template">
+        <title>Antônio Júnior | Desenvolvedor Front-end</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+        <!-- todos arquivos CSS -->
+        <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/slick.css">
+        <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader">
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-3"></div>
+                <div class="circle circle-4"></div>
             </div>
         </div>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQFAL-hieqRoVQ/profile-displayphoto-shrink_200_200/0/1703188797403?e=1726704000&v=beta&t=tDJWj-w8Jn4Was4gQMozr1C71Rf351hpI827n1RCVOk" class="rounded-circle mb-4" alt="Antonio Junior" width="150" height="150">
+        <!-- Back To Top Start -->
+        <a href="#main-wrapper" id="backto-top" class="back-to-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+        <!-- Main Wrapper Start -->
+        <div id="main-wrapper" class="main-wrapper overflow-hidden">
+            <!-- Navegação -->
+            <header class="large-screens">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="collapse navbar-collapse justify-content-between">
+                            <a class="navbar-brand" href="index.html"><img alt="logo" src="assets/media/logo.png"></a>
+                            <ul class="navbar-nav mainmenu">
+                                <li class="menu-item"><a href="#services">Serviços</a></li>
+                                <li class="menu-item"><a href="#skills">Habilidades</a></li>
+                                <li class="menu-item"><a href="#experience">Experiência</a></li>
+                                <li class="menu-item"><a href="#contact">Fale comigo</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <div class="col-md-8">
-                    <h2 class="mb-3">Sobre Mim</h2>
-                    <p class="lead">Atuo na criação e manutenção de sites e sistemas web, utilizando a plataforma Wordpress e as linguagens PHP, HTML, CSS e JavaScript. Sou responsável por garantir a qualidade, a segurança e a performance dos projetos, seguindo as melhores práticas e padrões de desenvolvimento. Além disso, eu apoio a equipe de suporte técnico na resolução de problemas e demandas dos clientes internos e externos.
-                    </p>
+            </header>
+            <header class="small-screen">
+                <div class="container">
+                    <div class="mobile-menu">
+                        <div>
+                            <a class="navbar-brand" href="index.html"><img alt=""  src="./assets/media/logo.png"></a>
+                        </div>
+                        <div class="hamburger-menu">
+                            <div class="bar"></div>	
+                        </div>
+                    </div>
+                    <nav class="mobile-navar d-xl-none">
+                        <ul>
+                            <li class="menu-item"><a href="#services">Serviços</a></li>
+                            <li class="menu-item"><a href="#skills">Habilidades</a></li>
+                            <li class="menu-item"><a href="#experience">Experiência</a></li>
+                            <li class="menu-item"><a href="#contact">Fale comigo</a></li>
+                        </ul>    
+                    </nav>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Portfólio -->
-    <section id="portfolio" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Meus Trabalhos</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                    <div class="card border-0 shadow-sm">
-                        <img src="imagem-projeto.jpg" class="card-img-top" alt="Projeto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 1</h5>
-                            <p class="card-text">Breve descrição do projeto.</p>
-                            <a href="#" class="btn btn-primary">Ver Projeto</a>
+            </header>
+            <!-- Inicio -->
+            <section class="hero-banner">   
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="content-block bg-gradient shadow br-30">
+                                <div class="text-block">
+                                    <h2 class="mb-16">Olá, sou Antônio, um desenvolvedor Front-end com 8 anos de experiência</h2>
+                                    <p class="dark-gray">Atuo na criação e manutenção de sites e sistemas web, utilizando a plataforma WordPress e as linguagens PHP, HTML, CSS e JavaScript. Também possuo experiência com frameworks e bibliotecas modernas como Bootstrap, Vue.js, Node.js e React Native.</p>
+                                </div>
+                                <a href="#contact" class="cus-btn primary">Fale comigo</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-block bg-gradient shadow br-30 text-center">
+                                <img src="assets/media/jr-sem-fundo.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Adicione mais projetos conforme necessário -->
-            </div>
-        </div>
-    </section>
+            </section>
+            <!-- Conteudo principal -->
+            <div class="page-content">
+                <!-- Serviços -->
+                <section class="services p-40" id="services">
+                    <div class="container">
+                        <div class="heading mb-48">
+                           <h3 class="mb-32">Serviços</h3>
+                           <h5>Explorando um universo de inovações de interface:<br>
+                            revelando meu portfólio de web design.</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="service-box bg-gradient shadow br-30 mb-24">
+                                    <div class="text-block">
+                                        <h4 class="mb-8">App interface Design</h4>
+                                        <p class="dark-gray mb-32">Lorem ipsum dolor sit amet consectetur. Quis vestibulum.</p>
+                                        <a href="" class="cus-btn primary">Learn more</a>
+                                    </div>
+                                    <div class="img-block">
+                                        <img src="assets/media/services/s-1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="service-box bg-gradient shadow br-30 mb-24">
+                                    <div class="text-block">
+                                        <h4 class="mb-8">Motion Design</h4>
+                                        <p class="dark-gray mb-32">Lorem ipsum dolor sit amet consectetur. Quis vestibulum.</p>
+                                        <a href="" class="cus-btn primary">Learn more</a>
+                                    </div>
+                                    <div class="img-block">
+                                        <img src="assets/media/services/s-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="service-box bg-gradient shadow br-30 mb-24 mb-lg-0">
+                                    <div class="text-block">
+                                        <h4 class="mb-8">Ui Design</h4>
+                                        <p class="dark-gray mb-32">Lorem ipsum dolor sit amet consectetur. Quis vestibulum.</p>
+                                        <a href="" class="cus-btn primary">Learn more</a>
+                                    </div>
+                                    <div class="img-block">
+                                        <img src="assets/media/services/s-3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="service-box bg-gradient shadow br-30">
+                                    <div class="text-block">
+                                        <h4 class="mb-8">UX Design</h4>
+                                        <p class="dark-gray mb-32">Lorem ipsum dolor sit amet consectetur. Quis vestibulum.</p>
+                                        <a href="" class="cus-btn primary">Learn more</a>
+                                    </div>
+                                    <div class="img-block">
+                                        <img src="assets/media/services/s-4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Serviços -->
 
-    <!-- Seção de Habilidades -->
-    <section id="skills" class="py-5 bg-dark text-white">
-        <div class="container">
-            <h2 class="text-center mb-5">Habilidades</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML / CSS</div>
+                <!-- Habilidades -->
+                <section class="skills p-40" id="skills">
+                    <div class="container">
+                        <div class="heading mb-48">
+                           <h3 class="mb-32">Habilidades</h3>
+                           <h5>Empowering Expertise: My Skill Set in Focus.</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                                    <img src="assets/media/icons/s-1.png" alt="" class="mb-32">
+                                    <h4>Figma</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                                    <img src="assets/media/icons/s-2.png" alt="" class="mb-32">
+                                    <h4>Adobe XD</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                                    <img src="assets/media/icons/s-3.png" alt="" class="mb-32">
+                                    <h4>Sketch</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6">
+                                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                                    <img src="assets/media/icons/s-4.png" alt="" class="mb-32">
+                                    <h4>Photoshop</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Habilidades -->
+
+                <!-- clientes -->
+                <section class="clients p-40" id="clients">
+                    <div class="container">
+                        <div class="heading mb-48">
+                           <h3>Clientes</h3>
+                        </div>
+                        <div class="client-slider">
+                            <div class="item">
+                                <img src="assets/media/clients/c-1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-4.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-5.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-6.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-1.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-2.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-3.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-4.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-5.png" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="assets/media/clients/c-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contato -->
+                <section class="contact p-40" id="contact">
+                    <div class="container">
+                        <div class="heading mb-48">
+                           <h3 class="mb-32">Contato</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2 class="title mb-32">Fique conectado,<br>  sempre disponível <b class="color-primary">PARA VOCÊ</b></h2>
+                                <p class="mb-32 dark-gray">Entre em contato para mais informações ou para discutir um projeto.</p>
+                                <ul class="unstyled">
+                                    <li><a href="tel:5591987373896"><h6 class="dark-gray"><i class="far fa-phone-alt"></i>+55 91 98737-3896</h6></a></li>
+                                    <li><a href="mailto:juniormaiabelem@gmail.com"><h6 class="dark-gray"><i class="fal fa-envelope"></i>juniormaiabelem@gmail.com</h6></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <form method="post" action="index.html" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group mb-24">
+                                                <input type="text" class="form-control" id="name" name="name" required placeholder="Seu nome">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group mb-24">
+                                                <input type="email" class="form-control" id="mail" name="email" required placeholder="Seu E-mail">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group mb-24">
+                                                <input type="text" class="form-control" id="phone" name="phone" required placeholder="Seu WhatsApp">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group mb-24">
+                                                <input type="text" class="form-control" id="subject" name="subject" required placeholder="Assunto">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group mb-24">
+                                                <textarea class="form-control" id="detail-message" required name="message" placeholder="Mensagem" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <button type="submit" class="cus-btn primary">Enviar</button>
+                                    </div>
+                                    <!-- Alert Message -->
+                                    <div id="message" class="alert-msg"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Area End -->
+                
+            </div>
+            <!-- Main Content End -->
+
+            <!-- footer Area start -->
+            <footer>
+                <div class="container">
+                    <div class="content">
+                        <h6 class="dark-gray">©2024 Antônio Júnior. Todos os direitos reservados.</h6>
+                        <ul class="social-icons unstyled">
+                            <li><a href=""><img src="assets/media/icons/Behance.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/media/icons/Dribbble.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/media/icons/Twitter.png" alt=""></a></li>
+                            <li><a href=""><img src="assets/media/icons/Linkedin.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">React</div>
-                    </div>
-                </div>
-                <!-- Adicione mais habilidades conforme necessário -->
-            </div>
+            </footer>
+            <!-- footer Area end -->
+            
         </div>
-    </section>
+            <!-- Jquery Js -->
+            <script src="assets/js/vendor/jquery-3.6.3.min.js"></script>
+            <script src="assets/js/vendor/bootstrap.min.js"></script>
+            <script src="assets/js/vendor/slick.min.js"></script>
+            <script src="assets/js/vendor/jquery-appear.js"></script>
+            <script src="assets/js/vendor/jquery-validator.js"></script>
 
-    <!-- Seção de Contato -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Contato</h2>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Seu Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Sua Mensagem"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+            <!-- Site Scripts -->
+            <script src="assets/js/app.js"></script>
+            
+    </body>
 
-    <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Antonio Junior. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- Scripts JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script> <!-- Adicionar script personalizado -->
-</body>
 </html>
