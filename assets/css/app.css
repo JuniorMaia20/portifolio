@@ -1630,3 +1630,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+header nav .navbar-nav .menu-item a:hover {
+  color: #4a5f7c;
+}
