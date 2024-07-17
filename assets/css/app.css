@@ -1630,18 +1630,3 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
-header nav .navbar-nav .menu-item a {
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 130%;
-  color: #4a5f7c;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 47px;
-  line-height: 125%;
-  letter-spacing: -0.47px;
-  color: #4a5f7c;
-}
