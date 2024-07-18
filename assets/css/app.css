@@ -1634,3 +1634,146 @@ body {
 header nav .navbar-nav .menu-item a:hover {
   color: #4a5f7c;
 }
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-block img {
+  width: 100%;
+  height: auto;
+}
+
+.text-service {
+  text-align: center;
+  padding: 20px;
+}
+
+.cus-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #0062E6; /* Ajuste para a cor desejada */
+}
+
+.cus-btn.primary {
+  background-color: #0062E6; /* Ajuste para a cor desejada */
+}
+
+.bg-gradient {
+  background: linear-gradient(45deg, #0062E6, #33AEFF);
+}
+
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.br-30 {
+  border-radius: 30px;
+}
+
+.dark-gray {
+  color: #555;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.services .service-box {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.br-30 {
+  border-radius: 10px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+.whatsapp-icon {
+  font-size: 40px; /* Tamanho do ícone */
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+/* modo escuro */
+body.light-mode {
+	background-color: white;
+	color: rgb(0, 0, 0);
+}
+
+body.dark-mode {
+	background-color: black;
+	color: rgb(165, 165, 165);
+}
+
+#toggle-mode {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 24px;
+	margin-left: 20px;
+}
+
+#toggle-mode i {
+	transition: color 0.3s;
+}
+
+body.light-mode #toggle-mode i {
+	color: rgb(74 95 124);
+}
+
+body.dark-mode #toggle-mode i {
+	color: rgb(190, 190, 190);
+}
+
+.decor-text.dark-mode #toggle-mode {
+	color: rgb(190, 190, 190);
+}

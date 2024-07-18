@@ -164,7 +164,46 @@
   Init.i();
 })(window, document, jQuery);
 
+// Função para alternar entre os modos claro e escuro
+function toggleMode() {
+	// Seleciona o corpo do documento
+	const body = document.body;
+	// Alterna a classe entre 'light-mode' e 'dark-mode'
+	body.classList.toggle('dark-mode');
+	body.classList.toggle('light-mode');
 
+	// Seleciona o ícone
+	const icon = document.getElementById('icon');
+	// Alterna o ícone entre sol e lua
+	if (body.classList.contains('dark-mode')) {
+		icon.classList.remove('fa-moon');
+		icon.classList.add('fa-sun');
+		localStorage.setItem('mode', 'dark');
+	} else {
+		icon.classList.remove('fa-sun');
+		icon.classList.add('fa-moon');
+		localStorage.setItem('mode', 'light');
+	}
+}
+
+// Event listener para o botão de alternância
+document.getElementById('toggle-mode').addEventListener('click', toggleMode);
+
+// Carrega a preferência do usuário ao carregar a página
+window.onload = function() {
+	const mode = localStorage.getItem('mode') || 'light';
+	document.body.classList.add(mode + '-mode');
+
+	// Ajusta o ícone ao carregar a página
+	const icon = document.getElementById('icon');
+	if (mode === 'dark') {
+		icon.classList.remove('fa-moon');
+		icon.classList.add('fa-sun');
+	} else {
+		icon.classList.remove('fa-sun');
+		icon.classList.add('fa-moon');
+	}
+};
 
 
 
