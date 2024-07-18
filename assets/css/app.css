@@ -1803,3 +1803,10 @@ a.cus-btn.primary {
 .cus-btn.primary:hover {
   background-color: #0056b3;
 }
+h4 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
