@@ -879,19 +879,19 @@ Elements
 #preloader .loader .circle-1 {
   width: 60px;
   height: 60px;
-  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.1855) 0%, rgba(68, 253, 38, 0.196) 100%);
+  background: linear-gradient(109.8deg, rgba(98, 171, 255, 0.186) 0%, rgba(84, 178, 255, 0.196) 100%);
   animation-name: circle-1-animation;
 }
 #preloader .loader .circle-3 {
   width: 40px;
   height: 40px;
-  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.265) 0%, rgba(68, 253, 38, 0.28) 100%);
+  background: linear-gradient(109.8deg, rgba(98, 171, 255, 0.186) 0%, rgba(84, 178, 255, 0.196) 100%);
   animation-name: circle-3-animation;
 }
 #preloader .loader .circle-4 {
   width: 20px;
   height: 20px;
-  background: linear-gradient(109.8deg, rgba(52, 248, 35, 0.265) 0%, rgba(68, 253, 38, 0.28) 100%);
+  background: linear-gradient(109.8deg, rgba(98, 171, 255, 0.186) 0%, rgba(84, 178, 255, 0.196) 100%);
   animation-name: circle-4-animation;
 }
 
@@ -1776,4 +1776,30 @@ body.dark-mode #toggle-mode i {
 
 .decor-text.dark-mode #toggle-mode {
 	color: rgb(190, 190, 190);
+}
+
+.cus-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #252d38;
+}
+
+a.cus-btn.primary {
+  background-color: #2a577c;
+}
+
+.service-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.cus-btn.primary {
+  transition: background-color 0.3s ease;
+}
+.cus-btn.primary:hover {
+  background-color: #0056b3;
 }
