@@ -34,8 +34,7 @@ else if(trim($comments) == '') {
 // Enter the email address that you want to emails to be sent to.
 // Example $address = "joe.doe@yourdomain.com";
 
-$address = $email;
-
+$address = "juniormaiabelem@gmail.com";
 
 // Configuration option.
 // i.e. The standard subject will appear as, "You've been contacted by John Doe."
